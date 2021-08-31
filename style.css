@@ -15,6 +15,8 @@
 #nav {
     position: fixed;
     width: 100%;
+    background-color: pink !important;
+    z-index: 5;
 }
 
 #navcontent {
@@ -53,16 +55,52 @@
 }
 
 
-#image2 {
-    position: absolute;
-    border-radius: 10px;
+.maincontent {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    border-color: orange;
     border-style: solid;
-    margin-left: 60em;
-    margin-bottom: 20em;
-    z-index: 1;
 }
 
-#image2 img{
-    width: 100%;
-    height: 17em;
+.textcontent {
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    border-style: solid;
+    border-color: black;
+    width: auto;
+    height: auto;
 }
+
+#innercontent {
+    border-style: solid;
+    border-color: purple;
+    overflow: hidden;
+    height: 500px;
+}
+
+#innercontent h1 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.contentimage {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+}
+.contentimage img {
+    width: auto;
+    height: 60%;
+}
+
+.stickyimage {
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 0;
+    align-self: flex-start; /* <-- this is the fix */
+
+  }
