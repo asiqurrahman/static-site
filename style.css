@@ -59,36 +59,49 @@
     display: flex;
     justify-content: center;
     overflow: hidden;
-    border-color: orange;
-    border-style: solid;
+    /* border-color: orange;
+    border-style: solid; */
+
 }
 
 .textcontent {
     display: flex;
     flex-direction: column;
     justify-self: start;
-    border-style: solid;
-    border-color: black;
     width: auto;
     height: auto;
 }
 
 #innercontent {
-    border-style: solid;
-    border-color: purple;
     overflow: hidden;
-    height: 500px;
+    min-height: 500px;
+    width: auto;
+    background-color: #38A3A5;
+    color: whitesmoke;
+}
+
+.innercontent2 {
+    background-color: whitesmoke !important;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
 #innercontent h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     text-align: center;
+    font-size: 3em;
+}
+
+#innercontent h2 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 3em;
 }
 
 
 .contentimage {
-    background-color: orange;
+    background-color: #464660;
     display: flex;
     justify-content: center;
 }
@@ -98,9 +111,38 @@
 }
 
 .stickyimage {
-    position: -webkit-sticky; /* for Safari */
     position: sticky;
-    top: 0;
+    bottom: 0%;
     align-self: flex-start; /* <-- this is the fix */
-
   }
+
+.first h1 {
+    background-color: #464660 !important;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.first h2{ 
+    margin-top: 20px;
+    color: whitesmoke !important;
+}
+.first p {
+    margin-top: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+}
+
+.second {
+    color: #464660 !important;
+}
+
+.second h2 {
+    color: #464660;
+    font-size: 1em !important;
+}
+
+.second p {
+    font-size: 2em !important;
+    font-weight: bold;
+}
