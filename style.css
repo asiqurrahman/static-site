@@ -17,13 +17,33 @@ body {
 #nav {
     position: fixed;
     width: 100%;
-    background-color: pink !important;
+    background-color: #FBF3F3 !important;
     z-index: 5;
-    height: 80px;
+    height: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    font-family: 'Roboto Slab', serif;
+}
+
+#nav a {
+    margin-left: 20%;
+    font-weight: bold;
+    font-size: 3em;
+    letter-spacing: .2rem;
+}
+
+.navlists {
+    display: flex;
+    margin-right: 10%;
+}
+
+.navlists p{
+    margin: 20px;
+    font-size: 1.5em;
 }
 
 #navcontent {
     height: 100vh;
+    width: 100%;
     background-color: #FBF3F3;
     display: flex;
     align-items: center;
@@ -78,6 +98,9 @@ body {
     align-items: center;
     font-family: 'Roboto Slab', serif;
     margin-top: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 20px;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
@@ -101,21 +124,24 @@ body {
 
 .services {
     margin-top: 100px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .services h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     font-size: 5em;
+    border-bottom: 4px solid #57CC99;
+    padding-bottom: 5px;
 }
 
 .maincontent {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 70px;
     border-radius: 20px;
     /* border-color: orange;
@@ -144,11 +170,14 @@ body {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
 
+
+
 #innercontent h1 {
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
     text-align: center;
     font-size: 3em;
+    padding: 20px;
 }
 
 #innercontent h2 {
@@ -185,6 +214,8 @@ body {
     font-weight: bold;
     text-align: center;
     font-size: 2em;
+    text-align: left;
+    padding: 20px;
 }
 
 .second {
@@ -208,6 +239,7 @@ body {
     margin-left: 2%;
 }
 
+
 .third h2  {
     color: whitesmoke !important;
     font-size: 1.5em !important;
@@ -220,19 +252,20 @@ body {
 .fourth h2 {
     color: #464660 !important;
     font-size: 2.5em !important;
+    padding: 20px;
 }
 
 .fifth h2{
     color: whitesmoke !important;
     font-size: 2.5em !important;
+    padding: 20px;
 }
 
 .reviews {
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin-top: 100px;
+    margin-top: 70px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -254,4 +287,20 @@ body {
     display: flex;
     justify-content: flex-end;
     color: #2E3647;
+    font-style: italic;
+    margin: auto;
+}
+
+.testimonals {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.testimonals h1 {  
+    font-family: 'Roboto Slab', serif;
+    font-size: 5em;
+    font-weight: bold;
+    border-bottom: 5px solid #57CC99;
+    padding-bottom: 5px;
 }
